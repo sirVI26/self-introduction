@@ -1,0 +1,54 @@
+*{
+    background-color:#EDECED;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+    
+}
+
+.img img{
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.path{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.back{
+    margin-right:120px ;
+}
+
+.back a{
+    color: #000;
+    text-decoration: none;
+}
+
+.more{
+    margin-right: 80px;
+}
+
+.more_page i{
+    color: red ;
+    font-size: 28px;
+}   
+
+.more_page a{    
+    color: #000;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    margin: 8px;
+}
+
+.more_page i{
+
+}
