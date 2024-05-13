@@ -1,0 +1,56 @@
+*{
+    font-family: 'DM Sans'!important;
+}
+
+.back{
+    position: absolute;
+    padding: 8px;
+    top: 26px;
+    left: 26px;
+}
+
+.back a{
+    text-decoration: none;
+    color: #000;
+}
+
+.first_item{
+    display: flex;
+    margin-top: 10px;
+    padding: 30px;
+    align-items: center;
+}
+
+.quotes{
+    transform: translateY(90%);
+    align-items: end;
+}
+
+.img img{
+    width: 500px;
+    margin-left: 50px;
+}
+
+.member{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    margin-top: 6%;
+}
+
+.member_item{
+    width: 25%;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.job{
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.decription{
+    margin-top: 20px;
+}
