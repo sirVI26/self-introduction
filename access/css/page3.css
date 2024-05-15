@@ -2,11 +2,16 @@
     font-family: 'DM Sans'!important;
 }
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
 .back{
-    position: absolute;
+    position: relative;
     padding: 8px;
     top: 26px;
-    left: 26px;
+    left: 30px;
 }
 
 .back a{
