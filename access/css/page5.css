@@ -1,6 +1,80 @@
-*{
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-    background-color: #FFDEE9;
-    width: 100vh;
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     height: 100vh;
+    font-family: 'DM Sans';
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.back{
+    position: absolute;
+    TOP: 4%;
+    LEFT: 3%;
+}
+
+.back a{
+    color: black;
+    text-decoration: none;
+}
+
+.wrap{    
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    box-shadow: 0px 0px 25px black;
+    border: 1px solid;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    align-items: center;
+}
+
+.wrap h3{
+    padding: 30px 10px 10px;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.wrap h4{
+    padding: 16px;
+}
+
+.wrap input{
+    width: 88%;
+    color: cornflowerblue;
+    background-color: floralwhite;
+    border-top: transparent;
+    border-right: transparent;
+    height: 40px;
+    margin: 30px 0;
+}
+
+.wrap button {  
+    border-radius: 60px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid;
+    width: 200px;
+    margin-top: 30px;
+    color: black;
+}
+
+.wrap button:active{
+    background-color: bisque;
+    color: #23a6d5;
 }

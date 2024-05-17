@@ -16,6 +16,25 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h5>ok bay bi</h5>
+    <div class="next_page back"><a href="page2.html">BACK</a></div>
+    <div class="wrap">
+        <h3>CHỜ CHÚT ĐÃ</h3>
+        <h4>Tính năng này bị giới hạn số người truy cập, vui lòng nhập key để tiếp tục</h4>
+        <input type="password" placeholder="mật mã chỉ dành cho ...." name="" id="pass1">
+        <button id="btn1" onclick="onClick()">XÁC NHẬN</button>
+    </div>
 </body>
-</html>
+
+<script>
+    function onClick() {
+        var userKey = document.getElementById('pass1').value
+        if(userKey == '35154012') {
+            alert('ban da thanh cong truy cap')
+
+        }
+        else{
+            alert('kiem tra lai key cua ban nhe')
+        }
+    }
+</script>
+</html> 
