@@ -6,3 +6,47 @@
     font-family: "DM Sans", sans-serif;
     font-size: 24px;
 }
+
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes move-right-to-left {
+    from{
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes move-top-to-bot {
+    from{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-bot-to-top {
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

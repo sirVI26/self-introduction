@@ -1,3 +1,5 @@
+
+
 .container{
     display: flex;
     justify-content: center;
@@ -6,6 +8,9 @@
 .introduc_img{
     display: flex;
     flex-direction: column;
+    animation-name:move-left-to-right ;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .introduc_img img {
@@ -24,6 +29,9 @@
     font-family: 'Sterilict', sans-serif;
     word-wrap: break-word;
     width: 401px;
+    animation-name: move-bot-to-top;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .more-1{    
@@ -32,6 +40,9 @@
     display: inline-block;
     top: 28%;
     right: -306px;
+    animation-name: move-right-to-left;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .more-1 a{
@@ -43,6 +54,9 @@
     position: relative;
     top: 52%;
     display: flex;
+    animation-name: move-top-to-bot;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
     justify-content:space-between;
 }
 
@@ -64,3 +78,4 @@
     font-size: 28px;
     padding: 8px;
 }
+
