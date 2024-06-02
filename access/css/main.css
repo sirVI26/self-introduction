@@ -1,7 +1,5 @@
 @media(min-width:1024px ){
-.enrol{
-    display: none;
-}
+
 
 .container{
     display: flex;
@@ -86,11 +84,7 @@
 }
 
 @media(max-width:1023px) {
-    body{
+    .container{
         display: none;
-    }
-    .enrol{
-        display: block;
-        color: red;
     }
 }
