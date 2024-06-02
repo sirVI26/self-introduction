@@ -14,13 +14,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script language="JavaScript">
+        window.onload = function() {
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function(e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+     
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        };
+    </script>
 </head>
 <body>
     <div class="next_page back"><a href="page2.html">BACK</a></div>
     <div class="wrap">
         <h3>CHỜ CHÚT ĐÃ</h3>
         <h4>Tính năng này bị giới hạn số người truy cập, vui lòng nhập mật khẩu để tiếp tục</h4>
-        <input type="password" placeholder="chia khoa toi dua em" name="" id="pass1">
+        <input type="password" placeholder="Password" name="" id="pass1">
         <button id="btn1" onclick="onClick()">XÁC NHẬN</button>
     </div>
 </body>
@@ -29,8 +69,7 @@
     function onClick() {
         var userKey = document.getElementById('pass1').value
         if(userKey == '35154012') {
-            alert('ban da thanh cong truy cap')
-
+            window.location= "hidden.html"
         }
         else{
             alert('kiem tra lai mat khau cua ban nhe')
