@@ -15,6 +15,9 @@
     width: 500px;
     height: 600px;
     object-fit: cover;
+    animation-name: move-left-to-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .path{
@@ -26,6 +29,9 @@
 
 .back{
     margin-right:120px ;
+    animation-name: move-left-to-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .back a{
@@ -47,6 +53,9 @@
     padding: 16px;
     display: block;
     margin: 8px;
+    animation-name: move-right-to-left;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .more_page i{

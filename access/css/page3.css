@@ -12,6 +12,9 @@
     padding: 8px;
     top: 26px;
     left: 30px;
+    animation-name: move-left-to-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .back a{
@@ -29,11 +32,17 @@
 .quotes{
     transform: translateY(90%);
     align-items: end;
+    animation-name: move-left-to-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .img img{
     width: 500px;
     margin-left: 50px;
+    animation-name: move-right-to-left;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .member{
@@ -45,6 +54,9 @@
 
 .member_item{
     width: 25%;
+    animation-name:move-top-to-bot;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .name{
